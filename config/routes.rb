@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # Reviews
   get '/books/:book_id/reviews/new', to: 'reviews#new',     as: :new_book_review
   post '/books/:book_id/reviews',    to: 'reviews#create',  as: :book_reviews
-  get '/review/:id',                 to: 'reviews#show',    as: :user
+  get '/reviews/:id',                 to: 'reviews#show',    as: :user
   delete '/reviews/:id',             to: 'reviews#destroy', as: :review
 
   # Authors
